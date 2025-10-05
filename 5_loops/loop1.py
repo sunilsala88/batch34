@@ -34,3 +34,7 @@ for i in list2:
     if i>max1:
         max1=i
 print(max1)
+
+#first 10 fib numbers
+#1 1 2 3 5 8 13 21 34 55
+fib=[1,1]
