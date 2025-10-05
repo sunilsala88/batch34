@@ -38,3 +38,14 @@ print(max1)
 #first 10 fib numbers
 #1 1 2 3 5 8 13 21 34 55
 fib=[1,1]
+num1=fib[0]
+num2=fib[1]
+for i in range(8):
+    num3=num1+num2
+    fib.append(num3)
+    num1=num2
+    num2=num3
+print(fib)
+
+prices=[4,5,6]
+volumes=[1,2,3]
