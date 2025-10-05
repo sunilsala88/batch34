@@ -29,3 +29,8 @@ print(even_num)
 
 #largest value in the list
 list2=[5,6,3,7,4]
+max1=list2[0]
+for i in list2:
+    if i>max1:
+        max1=i
+print(max1)
