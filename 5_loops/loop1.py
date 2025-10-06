@@ -49,3 +49,12 @@ print(fib)
 
 prices=[4,5,6]
 volumes=[1,2,3]
+
+sum_of_pv=0
+sum_of_v=0
+for i in range(len(prices)):
+    sum_of_pv=sum_of_pv+prices[i]*volumes[i]
+    sum_of_v=sum_of_v+volumes[i]
+
+vwap=sum_of_pv/sum_of_v
+print(vwap)
