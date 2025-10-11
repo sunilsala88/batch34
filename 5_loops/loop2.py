@@ -1,7 +1,7 @@
 
 
 #type 4
-stock_prices={'AAPL': 150, 'GOOGL': 2800, 'AMZN': 3400}
+stock_prices={'AAPL': 890, 'GOOGL': 2800, 'AMZN': 3400}
 
 # for stock in stock_prices:
 #     print(stock)
@@ -13,3 +13,4 @@ print(list(stock_prices.items()))
 
 for i,j in stock_prices.items():
     print(i,j)
+    
