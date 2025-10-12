@@ -21,3 +21,26 @@ while True:
     i=i+1
 print(count)
 
+
+
+for i in range(51):
+    if i%3==0 or i%5==0:
+        print(i,end=' ')
+
+print('')
+i=0
+while True:
+    if i>50:
+        break
+    if i%3==0 or i%5==0:
+        print(i,end=' ')
+    i=i+1
+
+print(' ')
+sent='Python is fun to learn'
+count=0
+for i in sent:
+    if i==' ':
+        count=count+1
+count=count+1
+print(count)
