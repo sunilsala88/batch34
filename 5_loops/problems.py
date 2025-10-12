@@ -44,3 +44,12 @@ for i in sent:
         count=count+1
 count=count+1
 print(count)
+
+
+word='Python is fun to learn'
+count = 0
+i = 0
+# While loop to count words
+while i < len(words):
+    count = count+1
+    i = i+1
