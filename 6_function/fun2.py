@@ -19,7 +19,7 @@ def multiply(num1,num2):
     ans=num1*num2
     return ans
 
-def division(num1,num2=1):
+def division(num1=1,num2=1):
     ans=num1/num2
     return ans
 
@@ -32,5 +32,7 @@ b=division(num2=3,num1=2)
 print(b)
 
 #default argument
-c=division(10)
+c=division()
 print(c)
+
+
