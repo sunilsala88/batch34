@@ -2,7 +2,9 @@
 
 stock_prices={'AAPL': 890, 'GOOGL': 2800, 'AMZN': 3400,'NVDA':789}
 
-
+def display(stock_prices):
+    for i,j in  stock_prices.items():
+        print(i,":",j)
 
 def take_input(stock_prices):
     porfolio={}
@@ -24,5 +26,12 @@ def take_input(stock_prices):
 
     return (porfolio)
 
+display(stock_prices)
 p=take_input(stock_prices)
 print(p)
+
+def maximum(a,b):
+    if a>b:
+        return a
+    else :
+        return b
