@@ -45,3 +45,20 @@ print(c2.get_info())
 #2 methods
 #area() #pi*r*r
 #circumference() 2*pi*r
+
+class Circle:
+    pi=3.14
+    def __init__(self,radius):
+        self.radius=radius
+    
+    def area(self):
+        return self.pi*self.radius*self.radius
+
+    def circumference(self):
+        return 2*self.pi*self.radius
+
+c1=Circle(10)
+c2=Circle(20)
+
+print(c1.circumference())
+print(c2.circumference())
