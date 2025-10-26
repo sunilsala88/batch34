@@ -62,3 +62,32 @@ c2=Circle(20)
 
 print(c1.circumference())
 print(c2.circumference())
+
+
+
+class Bank:
+    bank_name='jp morgan'
+
+    def __init__(self,name,acc_no,money):
+        self.name=name
+        self.acc_no=acc_no
+        self.balance=money
+    
+    def withdraw(self,amount):
+        if amount<self.balance:
+            self.balance=self.balance-amount
+            
+        else:
+            print('not enough money')
+        return self.balance
+
+    def deposit(self,amount):
+        self.balance=self.balance+amount
+        return self.balance
+
+
+u1=Bank('sanjay',98,1000)
+print(u1.name)
+print(u1.deposit(5000))
+print(u1.withdraw(2000))
+print(u1)
