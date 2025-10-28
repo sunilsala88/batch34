@@ -50,6 +50,9 @@ class Circle:
     pi=3.14
     def __init__(self,radius):
         self.radius=radius
+
+    def __repr__(self):
+        return str(self.radius)
     
     def area(self):
         return self.pi*self.radius*self.radius
@@ -60,34 +63,42 @@ class Circle:
 c1=Circle(10)
 c2=Circle(20)
 
-print(c1.circumference())
-print(c2.circumference())
+print(c1.area())
+print(Circle.area(c1))
+print(c2.area())
 
+print(c1)
+print(c2)
 
+# class Bank:
+#     bank_name='jp morgan'
 
-class Bank:
-    bank_name='jp morgan'
-
-    def __init__(self,name,acc_no,money):
-        self.name=name
-        self.acc_no=acc_no
-        self.balance=money
+#     def __init__(self,name,acc_no,money):
+#         self.name=name
+#         self.acc_no=acc_no
+#         self.balance=money
     
-    def withdraw(self,amount):
-        if amount<self.balance:
-            self.balance=self.balance-amount
+#     def __repr__(self):
+#         return self.name
+    
+#     def withdraw(self,amount):
+#         if amount<self.balance:
+#             self.balance=self.balance-amount
             
-        else:
-            print('not enough money')
-        return self.balance
+#         else:
+#             print('not enough money')
+#         return self.balance
 
-    def deposit(self,amount):
-        self.balance=self.balance+amount
-        return self.balance
+#     def deposit(self,amount):
+#         self.balance=self.balance+amount
+#         return self.balance
 
 
-u1=Bank('sanjay',98,1000)
-print(u1.name)
-print(u1.deposit(5000))
-print(u1.withdraw(2000))
-print(u1)
+# u1=Bank('sanjay',98,1000)
+# print(u1.name)
+# print(u1.deposit(5000))
+# print(u1.withdraw(2000))
+# print(u1)
+
+#all methods inside class should have self
+#to access any attribute you have to use self
