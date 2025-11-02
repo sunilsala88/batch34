@@ -18,3 +18,9 @@ print(os.getcwd())
 import sys
 sys.exit()
 print('last line')
+
+#pip (pakage manger)
+#numpy and pandas
+import numpy as np
+a=np.array()
+print(a)
