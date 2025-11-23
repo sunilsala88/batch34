@@ -7,6 +7,7 @@ current=dt.datetime.now()
 print(current.time())
 print(current.weekday())
 print(current.date())
+print(current.minute)
 
 # def strategy():
 #     print('running')
@@ -32,3 +33,15 @@ print(d1)
 
 #datetime to epoch
 print(current.timestamp())
+
+#str to datetime
+s1='2025-01-01'
+f='%Y-%d-%m'
+ds1=dt.datetime.strptime(s1,f)
+print(ds1)
+
+
+
+#datetime to str
+s3=current.strftime('%Y-%m')
+print(s3)
